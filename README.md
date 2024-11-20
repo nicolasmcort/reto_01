@@ -1,6 +1,6 @@
 # reto_01
 
-###1. Operaciones básicas entre 2 números
+### 1. Operaciones básicas entre 2 números
 
 Se utilizó la estructura match-case para gestionar las diferentes operaciones aritméticas. La función `operations` toma dos números y un operador como entrada, y dependiendo del operador (+, -, *, /), realiza la operación correspondiente. También se incluyó una verificación para evitar la división por cero.
 ```python
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     print(f"The result is: {result}")
 ```
 
-###2. Verificar si una palabra es un palíndromo
+### 2. Verificar si una palabra es un palíndromo
 
 Para verificar si una palabra es un palíndromo, primero se limpia la entrada al eliminar los espacios y convertir todos los caracteres a minúsculas. Luego, se hace uso de un bucle para comparar cada carácter desde el principio con su correspondiente desde el final de la palabra. Si cualquier par no coincide, la función devuelve False.
 ```python
@@ -53,7 +53,7 @@ if __name__ == "__main__":
         print(f"Is the expression '{word}' a palindrome? {palindrome(word)}")
 ```
 
-###3. Números primos en una lista
+### 3. Números primos en una lista
 
 La función `is_prime` verifica si un número es primo, iterando desde 2 hasta el número menos 1 para ver si tiene divisores. Luego, se procesa una lista de entradas, verificando si cada número es primo y manejando entradas inválidas con un bloque `try-except` para asegurar que solo se consideraran números válidos.
 ```python
@@ -83,7 +83,7 @@ if __name__ == "__main__":
     print(f"In your list, the prime numbers are: {prime_numbers}")
 ```
 
-###4. Mayor suma entre dos elementos consecutivos
+### 4. Mayor suma entre dos elementos consecutivos
 
 La función calcula la suma de cada par de números consecutivos en la lista y mantiene un registro de la suma más grande encontrada. Se incluye una validación para asegurarse de que los datos de entrada sean números válidos y que haya al menos dos números en la lista antes de proceder con el cálculo.
 ```python
@@ -120,7 +120,7 @@ if __name__ == "__main__":
         print("Please enter at least two valid integers.")
 ```
 
-###5. Filtrar palabras con los mismos caracteres
+### 5. Filtrar palabras con los mismos caracteres
 
 Para encontrar las palabras con los mismos caracteres, se utiliza la función `sorted()` para ordenar las letras de cada palabra y compararlas con las demás. Si dos palabras tienen las mismas letras, se agregan a la lista `result`. 
 ```python
