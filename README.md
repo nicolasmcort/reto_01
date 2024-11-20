@@ -1,7 +1,8 @@
 # reto_01
 
 **1. Operaciones básicas entre 2 números**
-Se utilizó la estructura match (disponible desde Python 3.10) para gestionar las diferentes operaciones aritméticas. La función `operations` toma dos números y un operador como entrada, y dependiendo del operador (+, -, *, /), realiza la operación correspondiente. También se incluyó una verificación para evitar la división por cero.
+
+Se utilizó la estructura match-case para gestionar las diferentes operaciones aritméticas. La función `operations` toma dos números y un operador como entrada, y dependiendo del operador (+, -, *, /), realiza la operación correspondiente. También se incluyó una verificación para evitar la división por cero.
 ```python
 def operations(a, b, operator: str):
     match operator:  # Match case to check the operator
@@ -29,6 +30,7 @@ if __name__ == "__main__":
 ```
 
 **2. Verificar si una palabra es un palíndromk**
+
 Para verificar si una palabra es un palíndromo, primero se limpia la entrada al eliminar los espacios y convertir todos los caracteres a minúsculas. Luego, se hace uso de un bucle para comparar cada carácter desde el principio con su correspondiente desde el final de la palabra. Si cualquier par no coincide, la función devuelve False.
 ```python
 def palindrome(word: str) -> bool:
@@ -52,6 +54,7 @@ if __name__ == "__main__":
 ```
 
 **3. Números primos en una lista**
+
 La función `is_prime` verifica si un número es primo, iterando desde 2 hasta el número menos 1 para ver si tiene divisores. Luego, se procesa una lista de entradas, verificando si cada número es primo y manejando entradas inválidas con un bloque `try-except` para asegurar que solo se consideraran números válidos.
 ```python
 def is_prime(number: int) -> bool:
@@ -81,7 +84,8 @@ if __name__ == "__main__":
 ```
 
 **4. Mayor suma entre dos elementos consecutivos**
-Para cada par de números consecutivos se calcula su suma y se mantiene un registro de la mayor suma encontrada. También se implementó una validación para asegurar que los datos de entrada sean números válidos antes de proceder con el cálculo.
+
+La función calcula la suma de cada par de números consecutivos en la lista y mantiene un registro de la suma más grande encontrada. Se incluye una validación para asegurarse de que los datos de entrada sean números válidos y que haya al menos dos números en la lista antes de proceder con el cálculo.
 ```python
 def max_consecutive_sum(nums: list) -> int:  
     max_sum: float = 0  
@@ -117,7 +121,8 @@ if __name__ == "__main__":
 ```
 
 **5. Filtrar palabras con los mismos caracteres**
-Para encontrar las palabras con los mismos caracteres, se utiliza la función `sorted()` para ordenar las letras de cada palabra y compararlas con las demás. Si dos palabras tienen las mismas letras, se agregan a la lista de resultados. 
+
+Para encontrar las palabras con los mismos caracteres, se utiliza la función `sorted()` para ordenar las letras de cada palabra y compararlas con las demás. Si dos palabras tienen las mismas letras, se agregan a la lista `result`. 
 ```python
 def has_same_characters(words: list) -> list:
     result = []
