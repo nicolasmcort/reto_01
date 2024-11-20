@@ -29,7 +29,7 @@ if __name__ == "__main__":
     print(f"The result is: {result}")
 ```
 
-**2. Verificar si una palabra es un palíndromk**
+**2. Verificar si una palabra es un palíndromo**
 
 Para verificar si una palabra es un palíndromo, primero se limpia la entrada al eliminar los espacios y convertir todos los caracteres a minúsculas. Luego, se hace uso de un bucle para comparar cada carácter desde el principio con su correspondiente desde el final de la palabra. Si cualquier par no coincide, la función devuelve False.
 ```python
